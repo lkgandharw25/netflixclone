@@ -1,0 +1,476 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    /* margin: 0 auto; */
+}
+
+.head-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: black;
+    position:fixed;
+    z-index: 6;
+
+}
+.brand {
+    width: 180px;
+    cursor: pointer;
+}
+.left-container ,.right-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+
+}
+
+.left-container{
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.main-nav{
+    font-size: 23px;
+    display: inline-flex;
+    color: rgb(140, 137, 134);
+    align-items: center;
+    justify-self: center;
+}
+
+.active{
+    color: white;
+}
+
+.main-nav li{
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.nav-items{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.nav-items:hover{
+    color: blue;
+    
+}
+
+
+
+.right-container{
+    margin-right: 80px;
+}
+.right-container img {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.right-container i{
+    margin-right: 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* banner-css */
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.title{
+    width: 100;
+    display: grid;
+    place-items:center;
+    margin-bottom:30px;
+}
+.title h1{
+    margin-bottom: 0px;
+    font-size:5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background: linear-gradient(to right,#f32170,#be421c,#cf23cf,#cc6b33);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+
+.title h3{
+    margin-top: 0px;
+    font-size: 3rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: #fff;
+    font-weight:lighter ;
+    letter-spacing: 3px;
+}
+ .title p{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 0px;
+}
+.bannerbtn{
+    display: flex;
+    ;
+    font-size: 1rem;
+
+}
+
+.btn button{
+   font-size: 20px;
+   border-radius: 5px;
+   padding: 13px 30px;
+   margin-left: 10px;
+   border: transparent;
+   outline:none;
+    
+}
+
+button{
+    cursor: pointer;
+    background-color: red;
+    color: #FFF;
+    font-size: 20px;
+    outline: 1px solid red;
+}
+button i{
+    padding: 5px;
+}
+
+input[type="email"] {
+    padding: 15px 30px;
+    font-size:20px ;
+    outline: 1px solid green;
+   
+    border-radius: 5px;
+}
+
+
+
+.video-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-6;   
+}
+
+.video-container video{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.overlay{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.2;
+}
+
+
+
+/* banner-2 css */
+
+
+.banner-2{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.left-banner-2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-banner-2 h1{
+    color: #FFF;
+    font-size: 5rem;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+.left-banner-2 p{
+    color: #FFF;
+    line-height: 35px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.right-banner-2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.tv-video{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: -6;
+}
+.tv-video video{
+    width: 469px;
+    margin-bottom: 15px;
+    margin-right: 6px;
+    opacity: 0.7;
+}
+
+
+/* banner-3 css */
+
+.banner-3 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.right-banner-3 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.mobailElement {
+    position: absolute;
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 335px;
+    border: 2px solid white;
+    
+}
+.mobail-content {
+    line-height: 0px;
+    margin-left: 10px;
+    display: flex;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobail-content h4{
+    color: blue;
+}
+.mobailElement img{
+    width: 70px;
+}
+
+.mob-ele-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.dwnld {
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.left-banner-3 h1{
+    color: #FFF;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.left-banner-3 p {
+    color: #FFF;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.banner-4{
+    margin-top: 100px;
+}
+
+
+.monitor-video{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: -6;
+}
+.monitor-video video {
+    cursor: pointer;
+    width: 423px;
+    margin-bottom: 154px;
+    margin-right: 6px;
+    opacity: 0.7;
+}
+
+/* banner-5css */
+
+
+.banner-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-5-cotent{
+    color: #FFF;
+}
+
+.banner-5-cotent h1{
+    color: #FFF;
+    font-size: 5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.banner-5-cotent p{
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+/* banner-6css */
+
+.banner-6 {
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.title-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-6 h1{
+    color: #FFF;
+    font-size: 5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.que {
+    cursor: pointer;
+    background-color: rgb(45 45 45);
+    width: 70%;
+    display: flex;
+    margin-left: 235px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.que:hover{
+    background-color: #000;
+    color: wheat;
+}
+.que-text {
+    margin-left: 20px;
+    font-family:inherit;
+    color: #adabab;
+    font-family:Arial, Helvetica, sans-serif;
+}.que-ele {
+    font-size: 40px;
+    margin-right: 30px;
+    color: #a4a0a0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.banner-6btn {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-6btn-dec {
+    color: gray;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+/* banner-7 css */
+.banner-7 {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 100px;
+}
+
+.banner-7 ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+
+
+li button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #FFF;
+}
+
+
+res6 cssponsive css
+
+
+@media (max-width:1200px){
+    .main-nav{
+        display: none;
+    }
+}
+
+.line{
+    width: 100%;
+    height: 0.5rem;
+    margin-top: 130px;
+    bottom: -0.5rem;
+    background-color: rgb(35, 35, 35);
+}
