@@ -151,6 +151,11 @@ body{
     
 }
 
+button:hover{
+    background-color:transparent;
+    color:#FFF;
+}
+
 button{
     cursor: pointer;
     background-color: red;
